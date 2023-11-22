@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 30px;
+    display: flex;
+}
+
+.half {
+    width: 50%;
+    padding: 1rem;
+}
+
+.topping {
+    cursor: pointer;
+}
+
+.pizza .onions,
+.pizza .tomatoes,
+.pizza .bread,
+.pizza .qazis,
+.pizza .sausages,
+.pizza .cheeses {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1;
+    display: none;
+}
+.pizza .show.onions,
+.pizza .show.tomatoes,
+.pizza .show.bread,
+.pizza .show.qazis,
+.pizza .show.sausages,
+.pizza .show.cheeses {
+    display: block;
+}
+
+.pizza {
+    position: relative;
+}
+.pizza .bread {
+    background: radial-gradient(#ecbe52, #cf9612);
+    border-radius: 50%;
+    border: 15px solid #bc4f00;
+    display: block;
+}
+.pizza .tomatoes .tomato {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.pizza .tomatoes .tomato::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    width: 30%;
+    background: tomato;
+    border-radius: 100% 10px 10px 100%/50% 10px 10px 50%;
+}
+.pizza .tomatoes .tomato::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: 30%;
+    background: tomato;
+    border-radius: 10px 100% 100% 10px/10px 50% 50% 10px;
+}
+.pizza .tomatoes .tomato-1 {
+    top: 30%;
+    left: 30%;
+}
+.pizza .tomatoes .tomato-2 {
+    top: 70%;
+    left: 30%;
+}
+.pizza .tomatoes .tomato-3 {
+    top: 70%;
+    left: 70%;
+}
+.pizza .tomatoes .tomato-4 {
+    top: 30%;
+    left: 70%;
+}
+.pizza .onions .onion {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 10px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px grey, 0 0 0 10px white, 0 0 0 11px grey,
+        0 0 0 20px white, 0 0 0 21px grey, 0 0 0 30px white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.pizza .onions .onion-1 {
+    top: 15%;
+    left: 50%;
+}
+.pizza .onions .onion-2 {
+    top: 85%;
+    left: 50%;
+}
+.pizza .onions .onion-3 {
+    top: 50%;
+    left: 15%;
+}
+.pizza .onions .onion-4 {
+    top: 50%;
+    left: 85%;
+}
+
+.pizza .qazis .qazi {
+    width: 100px;
+    height: 60px;
+    background: rgb(104, 34, 34);
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(-20deg);
+}
+.pizza .qazis .qazi-1 {
+    top: 30%;
+    left: 40%;
+}
+.pizza .qazis .qazi-2 {
+    top: 65%;
+    left: 50%;
+}
+.pizza .qazis .qazi-3 {
+    top: 55%;
+    left: 25%;
+}
+.pizza .qazis .qazi-4 {
+    top: 40%;
+    left: 65%;
+}
+
+.pizza .sausages .sausage {
+    width: 100px;
+    height: 80px;
+    background: #e17c36;
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(-20deg);
+}
+.pizza .sausages .sausage-1 {
+    top: 32%;
+    left: 52%;
+}
+.pizza .sausages .sausage-2 {
+    top: 62%;
+    left: 38%;
+}
+.pizza .sausages .sausage-3 {
+    top: 42%;
+    left: 28%;
+}
+.pizza .sausages .sausage-4 {
+    top: 50%;
+    left: 62%;
+}
+
+.pizza .cheeses .cheese {
+    width: 100px;
+    height: 100px;
+    background-color: #fdd863;
+    position: absolute;
+    overflow: hidden;
+}
+.pizza .cheeses .cheese-1 {
+    top: 10%;
+    left: 30%;
+}
+.pizza .cheeses .cheese-2 {
+    top: 10%;
+    left: 58%;
+}
+.pizza .cheeses .cheese-3 {
+    top: 30%;
+    left: 10%;
+}
+.pizza .cheeses .cheese-4 {
+    top: 58%;
+    left: 10%;
+}
+.pizza .cheeses .cheese-5 {
+    top: 30%;
+    left: 78%;
+}
+.pizza .cheeses .cheese-6 {
+    top: 58%;
+    left: 78%;
+}
+.pizza .cheeses .cheese-7 {
+    top: 78%;
+    left: 30%;
+}
+.pizza .cheeses .cheese-8 {
+    top: 78%;
+    left: 58%;
+}

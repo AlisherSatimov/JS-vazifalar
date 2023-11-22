@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: rgb(30, 7, 47);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.magicAnswers {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: rgb(28, 89, 154);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+}

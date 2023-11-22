@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <title>Pizza</title>
+    </head>
+    <body>
+        <div class="half">
+            <div class="pizza">
+                <div class="bread"></div>
+                <div class="tomatoes">
+                    <div class="tomato tomato-1"></div>
+                    <div class="tomato tomato-2"></div>
+                    <div class="tomato tomato-3"></div>
+                    <div class="tomato tomato-4"></div>
+                </div>
+                <div class="onions">
+                    <div class="onion onion-1"></div>
+                    <div class="onion onion-2"></div>
+                    <div class="onion onion-3"></div>
+                    <div class="onion onion-4"></div>
+                </div>
+                <div class="pineapples">
+                    <div class="pineapple pineapple-1"></div>
+                    <div class="pineapple pineapple-2"></div>
+                    <div class="pineapple pineapple-3"></div>
+                    <div class="pineapple pineapple-4"></div>
+                </div>
+                <div class="qazis">
+                    <div class="qazi qazi-1"></div>
+                    <div class="qazi qazi-2"></div>
+                    <div class="qazi qazi-3"></div>
+                    <div class="qazi qazi-4"></div>
+                </div>
+                <div class="sausages">
+                    <div class="sausage sausage-1"></div>
+                    <div class="sausage sausage-2"></div>
+                    <div class="sausage sausage-3"></div>
+                    <div class="sausage sausage-4"></div>
+                </div>
+                <div class="cheeses">
+                    <div class="cheese cheese-1"></div>
+                    <div class="cheese cheese-2"></div>
+                    <div class="cheese cheese-3"></div>
+                    <div class="cheese cheese-4"></div>
+                    <div class="cheese cheese-5"></div>
+                    <div class="cheese cheese-6"></div>
+                    <div class="cheese cheese-7"></div>
+                    <div class="cheese cheese-8"></div>
+                </div>
+
+                <div class="mashroom"></div>
+                <div class="olive"></div>
+                <div class="ketchup"></div>
+                <div class="mayo"></div>
+            </div>
+        </div>
+
+        <div class="half">
+            <h2>Build your own PIZZA</h2>
+            <ul class="toppings">
+                <li>Bread - $2</li>
+                <li class="topping" data-price="1" data-target=".tomatoes">
+                    Tomatoes - $1 <input type="checkbox" />
+                </li>
+                <li class="topping" data-price="1" data-target=".onions">
+                    Onions - $1 <input type="checkbox" />
+                </li>
+                <li class="topping" data-price="2" data-target=".qazis">
+                    Qazis - $2 <input type="checkbox" />
+                </li>
+                <li class="topping" data-price="1.5" data-target=".sausages">
+                    Sausages - $1.5 <input type="checkbox" />
+                </li>
+                <li class="topping" data-price="1.2" data-target=".cheeses">
+                    Cheeses - $1.2 <input type="checkbox" />
+                </li>
+            </ul>
+            <h3>Total: $<span class="total">2</span></h3>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.trafficLight {
+    margin: 20px auto 0;
+    width: 400px;
+    height: 850px;
+    display: flex;
+    border-radius: 50px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8196078431);
+    justify-content: space-around;
+}
+
+.circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}

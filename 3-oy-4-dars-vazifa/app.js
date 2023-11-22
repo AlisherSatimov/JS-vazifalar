@@ -1,0 +1,20 @@
+let fName = prompt("Ismingizni kiriting: ");
+let lName = prompt("Familiyangizni kiriting: ");
+let mName = prompt("Otangizning ismini kiriting: ");
+let nationality = prompt("Millatingizni kiriting: ");
+let age = prompt("Yoshingizni kiriting: ");
+let hight = prompt("Bo'yingizni kiriting: ");
+let weight = prompt("Vazningizni kiriting: ");
+let hobby = prompt("Qiziqishlaringiz va hobbiylaringizni kiriting: ");
+let phoneNumber = prompt("Telefon raqamingizni kiriting: ");
+let mail = prompt("Elektron pochta manzilingizni kiriting: ");
+
+console.log("Foydalanuvchining ma'lumotlari:");
+console.log("F.I.O: " + lName + " " + fName + " " + mName);
+console.log("Millati: " + nationality);
+console.log("Yoshi: " + age);
+console.log("Bo'yi: " + hight);
+console.log("Vazni: " + weight);
+console.log("Qiziqishlari va hobbilari: " + hobby);
+console.log("Telefon raqami: " + phoneNumber);
+console.log("Elektron pochta manzili: " + mail);
